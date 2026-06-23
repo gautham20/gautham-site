@@ -11,7 +11,7 @@ title: "About"
 <div class="col-760">
 
   <!-- Hero -->
-  <section class="about-hero">
+  <section class="about-hero" data-rise style="animation-delay:0ms">
     <h1 class="display-name">{{ about.hero.name_line1 }}<br>{{ about.hero.name_line2 }}</h1>
     <div class="hero-rule"></div>
     <div class="hero-lockup">
@@ -22,17 +22,17 @@ title: "About"
 
   <!-- Career -->
   <section class="career-section">
-    <div class="section-label">
+    <div class="section-label" data-rise style="animation-delay:120ms">
       <span class="section-label-text">01 — Career</span>
       <span class="section-rule"></span>
     </div>
-    <div>
+    <div class="timeline">
       {% for job in career %}
-      <div class="timeline-entry">
+      <div class="timeline-entry tl-row">
         <div class="timeline-year">{{ job.start }}<br><span class="year-end">{{ job.end }}</span></div>
         <div class="timeline-rail">
-          {% unless forloop.last %}<div class="timeline-rail-line"></div>{% endunless %}
-          <div class="timeline-dot{% if job.current %} current{% endif %}"></div>
+          {% unless forloop.last %}<div class="timeline-rail-line tl-rail"></div>{% endunless %}
+          <div class="timeline-dot{% if job.current %} current{% endif %} tl-node"></div>
         </div>
         <div>
           <div class="timeline-company">{{ job.company }}{% if job.company_sub %} <span class="timeline-company-sub">{{ job.company_sub }}</span>{% endif %}</div>
@@ -45,7 +45,7 @@ title: "About"
   </section>
 
   <!-- Writing -->
-  <section class="writing-section">
+  <section class="writing-section" data-rise style="animation-delay:200ms">
     <div class="section-label">
       <span class="section-label-text">02 — Recent writing</span>
       <span class="section-rule"></span>
@@ -67,7 +67,7 @@ title: "About"
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="site-footer" data-rise style="animation-delay:280ms">
     <div class="footer-copy">{{ about.footer.location }}</div>
     <div class="footer-socials">
       {% for link in social %}

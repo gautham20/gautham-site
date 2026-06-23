@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
+<div class="read-progress"></div>
+
 <div class="col-680">
 
-  <header class="post-header">
+  <header class="post-header" data-rise style="animation-delay:0ms">
     <a href="/blog/" class="post-back">← Writing</a>
     <div class="post-kicker">{{ page.category }}{% if page.source %} · {{ page.source }}{% endif %}</div>
     <h1>{{ page.title }}</h1>
@@ -16,14 +18,14 @@ layout: default
     </div>
   </header>
 
-  <div class="post-hero">
+  <div class="post-hero" data-rise style="animation-delay:60ms">
     <span class="card-thumb-caption">{{ page.thumb_caption | default: "[ figure ]" }}</span>
   </div>
   {% if page.hero_caption %}
   <div class="post-hero-caption">{{ page.hero_caption }}</div>
   {% endif %}
 
-  <article class="post-body">
+  <article class="post-body" data-rise style="animation-delay:100ms">
     {{ content }}
   </article>
 

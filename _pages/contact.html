@@ -8,7 +8,7 @@ title: "Contact"
 <div class="col-760">
 
   <!-- Header -->
-  <section class="contact-header">
+  <section class="contact-header" data-rise style="animation-delay:0ms">
     <div class="section-label">
       <span class="section-label-text">Contact</span>
       <span class="section-rule"></span>
@@ -18,7 +18,7 @@ title: "Contact"
   </section>
 
   <!-- Cards -->
-  <section class="contact-grid">
+  <section class="contact-grid" data-rise style="animation-delay:80ms">
 
     <!-- Email composer -->
     <div class="contact-card">
@@ -51,7 +51,7 @@ title: "Contact"
   </section>
 
   <!-- Elsewhere -->
-  <section class="elsewhere-section">
+  <section class="elsewhere-section" data-rise style="animation-delay:140ms">
     <div class="elsewhere-label">Elsewhere</div>
     <div class="elsewhere-links">
       {% for link in c.elsewhere %}
@@ -61,7 +61,7 @@ title: "Contact"
   </section>
 
   <!-- Footer -->
-  <footer class="contact-footer">
+  <footer class="contact-footer" data-rise style="animation-delay:200ms">
     <div class="contact-footer-text">{{ c.footer.location }}</div>
     <div class="contact-footer-text">{{ c.footer.reply_time }}</div>
   </footer>
