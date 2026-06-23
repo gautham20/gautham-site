@@ -9,7 +9,7 @@ title: "Blog"
 <div class="col-880">
 
   <!-- Header -->
-  <section class="blog-header">
+  <section class="blog-header" data-rise style="animation-delay:0ms">
     <div class="section-label">
       <span class="section-label-text">Writing</span>
       <span class="section-rule"></span>
@@ -20,7 +20,7 @@ title: "Blog"
   </section>
 
   <!-- Grid -->
-  <div class="cards-grid">
+  <div class="cards-grid" data-rise style="animation-delay:80ms">
     {% for post in all_posts %}
       <a href="{{ post.url }}" class="card" target="_blank" rel="noopener">
         <div class="card-thumb-std">
