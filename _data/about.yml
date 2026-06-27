@@ -4,7 +4,13 @@ hero:
   role:
     - "Applied AI Engineer"
     - "Senior Data Scientist"
-  bio: "Ten years turning ML into measurable impact across FinTech, fraud, telecom and e-commerce."
+  bio: |
+    <p>I'm Gautham Kumaran, a Data Scientist based in Dubai with 10 years building production ML and AI systems across FinTech, fraud, telecom, and e-commerce.</p>
+    <p>At heart I'm a builder chasing real-world impact, and enjoy learning the technical skills necessary to get the job done. I started as a web developer, moved into data science and worked in both classic ML and deep learning solutions, and recently, I've been building agentic systems.</p>
+    <p>These ideas shape how I build:</p>
+    <p><em>"A complex system that works is invariably found to have evolved from a simple system that worked."</em> — John Gall</p>
+    <p><em>"It is a capital mistake to theorize before one has data."</em> — Sherlock Holmes</p>
+    <p><em>"Everything fails all the time."</em> — Werner Vogels</p>
 
 footer:
   location: "Dubai, UAE · © 2026"

@@ -15,8 +15,8 @@ title: "About"
     <h1 class="display-name">{{ about.hero.name_line1 }}<br>{{ about.hero.name_line2 }}</h1>
     <div class="hero-rule"></div>
     <div class="hero-lockup">
-      <div class="hero-role">{{ about.hero.role | join: "<br>" }}</div>
-      <p class="hero-bio">{{ about.hero.bio }}</p>
+      <div class="hero-role">{{ about.hero.role | join: " · " }}</div>
+      <div class="hero-bio">{{ about.hero.bio }}</div>
     </div>
   </section>
 

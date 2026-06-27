@@ -4,6 +4,9 @@ layout: page
 title: "Contact"
 ---
 {% assign c = site.data.contact %}
+{% assign social = site.data.social %}
+{% assign linkedin_link = social | where: "icon", "linkedin" | first %}
+{% assign elsewhere = social | where_exp: "link", "link.icon != 'linkedin' and link.icon != 'email'" %}
 
 <div class="col-760">
 
@@ -39,7 +42,7 @@ title: "Contact"
     </div>
 
     <!-- LinkedIn -->
-    <a href="{{ c.linkedin.url }}" class="linkedin-card">
+    <a href="{{ linkedin_link.url }}" class="linkedin-card">
       <div>
         <div class="linkedin-card-icon">{% include icon.html name="linkedin" size="26" %}</div>
         <div class="linkedin-card-title">{{ c.linkedin.title }}</div>
@@ -54,7 +57,7 @@ title: "Contact"
   <section class="elsewhere-section" data-rise style="animation-delay:140ms">
     <div class="elsewhere-label">Elsewhere</div>
     <div class="elsewhere-links">
-      {% for link in c.elsewhere %}
+      {% for link in elsewhere %}
       <a href="{{ link.url }}">{% include icon.html name=link.icon size="16" %}{{ link.label }}</a>
       {% endfor %}
     </div>
