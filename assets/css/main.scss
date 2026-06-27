@@ -179,9 +179,8 @@ a { color: inherit; text-decoration: none; }
 
 .hero-lockup {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 24px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .hero-role {
@@ -190,17 +189,22 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
-  padding-top: 4px;
-  white-space: nowrap;
 }
 
 .hero-bio {
   font-family: 'Spectral', serif;
   font-size: 17px;
-  line-height: 1.65;
+  line-height: 1.7;
   color: var(--ink2);
-  margin: 0;
-  max-width: 320px;
+  max-width: 560px;
+}
+
+.hero-bio p {
+  margin: 0 0 1em;
+}
+
+.hero-bio p:last-child {
+  margin-bottom: 0;
 }
 
 /* === CAREER / TIMELINE === */
