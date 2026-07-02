@@ -1,7 +1,7 @@
 # Analytics
 umami:
-  url:        "" # e.g. https://your-umami.vercel.app
-  website_id: "" # from Umami dashboard → Settings → Websites
+  url:        "https://cloud.umami.is"
+  website_id: "c37cbdcc-383c-42e3-8d54-0534eb28be0f"
 
 # Site Settings
 locale                   : "en-US"
