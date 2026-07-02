@@ -23,5 +23,8 @@
   {{ content }}
   <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/motion.js' | relative_url }}"></script>
+  {% if site.umami.website_id and site.umami.website_id != "" %}
+  <script defer src="{{ site.umami.url }}/script.js" data-website-id="{{ site.umami.website_id }}"></script>
+  {% endif %}
 </body>
 </html>

@@ -1,3 +1,8 @@
+# Analytics
+umami:
+  url:        "" # e.g. https://your-umami.vercel.app
+  website_id: "" # from Umami dashboard → Settings → Websites
+
 # Site Settings
 locale                   : "en-US"
 title                    : "Gautham Kumaran"
